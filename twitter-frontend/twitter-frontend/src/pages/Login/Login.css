@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,800');
+
+*{
+	box-sizing: border-box;
+}
+
+body 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -1.2rem 0 3.2rem;
+	background-color: rgba(244,244,244,255);
+}
+
+h1 
+{
+	font-weight: 900;
+}
+
+p 
+{
+	font-size: 14px;
+	font-weight: 100;
+	letter-spacing: 0.5px;
+}
+
+a 
+{
+	font-size: 14px;
+	text-decoration: none;
+}
+
+button 
+{
+	border-radius: 8px;
+	background-color: #272221;
+    margin:1rem;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bolder;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	font-size: 1.1rem;
+	transition: all 0.2s linear;
+}
+
+
+button:hover
+{
+	background-color: #41a6e5;
+	border-color: #41a6e5;
+	color: black;
+}
+
+form 
+{
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	text-align: left;
+	width: 466px;
+}
+
+input 
+{
+	background-color: #eee;
+	border: none;
+	width: 100%;
+}
+
+.container 
+{
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.heading
+{
+	margin-top: 1.34rem;
+}
+
+.form-container 
+{
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+
+.login 
+{
+	z-index: 99;
+	right: 0rem;
+}
+
+
+.overlay-container 
+{
+    left:0;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+}
+
+.overlay 
+{
+	color: #FFFFFF;
+	position: relative;
+}
+
+.overlay-panel 
+{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	width: 50%;
+	
+}
+
+.overlay-panel i
+{
+	color:white;
+	font-size: 4rem;
+}
+
+.overlay-panel.welcome-back i,h2
+{
+	margin-right: 4rem;
+}
+
+.iconStyle
+{
+	margin-top: 25px;
+	transition: 0.3s all linear;
+}
+
+.iconStyle:hover
+{
+	scale:1.2;
+	cursor: pointer;
+}
+
+input:focus::-webkit-input-placeholder 
+{
+    opacity: 0;
+}
